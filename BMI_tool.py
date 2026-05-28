@@ -536,7 +536,7 @@ if __name__ == '__main__':
     db = pymysql.connect(
         host='localhost',
         user='root',
-        password='217727bhj',
+        password='your_mysql_password',
         # 数据库名，如变动请按变动后修改
         database='my_database')
 
