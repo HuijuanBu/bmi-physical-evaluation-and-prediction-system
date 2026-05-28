@@ -1,0 +1,7 @@
+PyQt5
+PyQtWebEngine
+pymysql
+pandas
+numpy
+pyecharts
+scikit-learn
