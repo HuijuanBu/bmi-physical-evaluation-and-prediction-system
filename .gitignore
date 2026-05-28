@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# PyCharm / IDE
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+
+# Database backup files
+*.sql.bak
+*.db
+
+# Build output
+build/
+dist/
+*.spec
+*.exe
