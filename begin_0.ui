@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Welcome</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon/icons/心脏跳动.png</normaloff>:/icon/icons/心脏跳动.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>1882</width>
+      <height>1028</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1882</width>
+      <height>1028</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1882</width>
+      <height>1028</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/images/个性艺术ppt-49.png);</string>
+    </property>
+    <property name="gridSize">
+     <size>
+      <width>1882</width>
+      <height>1028</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="begin_button">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>640</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>16</pointsize>
+      <weight>9</weight>
+      <italic>true</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 10px;  border: 2px groove gray;
+	background-color: rgb(0, 0, 91);
+	background-color: rgb(11, 41, 88);
+font: 75 italic 14pt &quot;Bahnschrift&quot;;
+font: 75 italic 12pt &quot;Arial Narrow&quot;;
+
+    /*背景颜色*/  
+    /*字体颜色为白色*/    
+	color: rgb(255, 255, 255);
+	font: 75 italic 12pt &quot;Arial&quot;;
+	font: 75 italic 16pt &quot;Arial&quot;;
+      
+}
+QPushButton:pressed
+{
+    
+    /*按下时字向右移动4像素*/  
+    padding-left:4px;
+    /*按下时字向下移动4像素*/  
+    padding-top:4px;
+}</string>
+    </property>
+    <property name="text">
+     <string>点击开始使用</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

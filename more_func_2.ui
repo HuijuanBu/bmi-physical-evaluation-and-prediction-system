@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1882</width>
+    <height>1059</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1882</width>
+    <height>1059</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1882</width>
+    <height>1059</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>我的档案__222</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="look_change_line_button">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>40</y>
+      <width>471</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>查看我使用程序以来的BMI与体重变化曲线</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_plan_button">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>220</y>
+      <width>821</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>依据过去七天内的体重，卡路里摄入与消耗数据预测未来一个月体重与BMI变化</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deep_analse">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>590</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(175, 247, 255);</string>
+    </property>
+    <property name="text">
+     <string>退出程序</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_jisuan_BMI_2">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>580</y>
+      <width>291</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回重新计算BMI</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="diary_button">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>270</y>
+      <width>491</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>一些杂记碎碎念</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="last_predit_button">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>390</y>
+      <width>691</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>依据使用程序以来的BMI与体重变化预测未来一个月变化</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>deep_analse</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>666</x>
+     <y>388</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>483</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

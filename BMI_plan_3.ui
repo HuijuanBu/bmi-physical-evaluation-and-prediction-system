@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1882</width>
+    <height>1059</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1882</width>
+    <height>1059</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1882</width>
+    <height>1059</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>我的健康计划__333</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="predit_button">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>340</y>
+      <width>281</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>依据我一周的饮食与运动计划进行未来一个月内的BMI预测</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_lastmenu">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>520</y>
+      <width>281</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>返回上一菜单</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cacluta_kcal_button">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>900</y>
+      <width>391</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>计算我的卡路里消耗</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close_3">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>680</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>退出应用</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="look_kcalin_buttton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>900</y>
+      <width>391</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>计算我的卡路里摄入</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_button">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>110</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>保存过去七天的数据</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="height_edit">
+    <property name="geometry">
+     <rect>
+      <x>1660</x>
+      <y>250</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>1430</x>
+      <y>250</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>预测前请输入身高信息</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>250</y>
+      <width>181</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>第一天</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>第二天</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>第三天</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>第四天</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>第五天</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>第六天</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>第七天</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>230</y>
+      <width>181</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="day1_wei_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day2_wei_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day3_wei_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day4_wei_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day5_wei_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day6_wei_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day7_wei_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>230</y>
+      <width>191</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLineEdit" name="day1_in_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day2_in_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day3_in_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day4_in_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day5_in_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day6_in_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day7_in_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>170</y>
+      <width>731</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>体重/kg</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>饮食摄入卡路里/卡</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+       <property name="text">
+        <string>卡路里消耗/卡</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>230</y>
+      <width>191</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLineEdit" name="day1_out_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day2_out_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day3_out_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day4_out_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day5_out_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day6_out_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="day7_out_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>close_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>623</x>
+     <y>478</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

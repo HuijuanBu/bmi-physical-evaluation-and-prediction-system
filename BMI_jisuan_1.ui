@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1880</width>
+    <height>1026</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1880</width>
+    <height>1026</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1880</width>
+    <height>1026</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>BMI计算</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="height_label">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>20</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>请输入当前身高：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="height_edit">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>60</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cm_label">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>70</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>cm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="weight_label">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>140</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>请输入当前体重：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="weight_edit">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>180</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kg_label">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>190</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>kg</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>260</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>您的性别是：</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="gender_man_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>300</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>男</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="gender_woman_button">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>350</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>女</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dangqian_label">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>400</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>您当前的BMI是：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="BMI_result_line_edit_2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>460</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="jisuan_BMI_button">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>530</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>计算BMI并保存记录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="morefunc_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>520</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>更多功能</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tuichu_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>530</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(11, 41, 88);
+color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Book Antiqua&quot;;</string>
+    </property>
+    <property name="text">
+     <string>退出本次应用</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView_2">
+    <property name="geometry">
+     <rect>
+      <x>-90</x>
+      <y>580</y>
+      <width>1880</width>
+      <height>1026</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1880</width>
+      <height>1026</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1880</width>
+      <height>1026</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/images/page_2_1.png);
+background-image: url(:/images/images/page_2_2.png);</string>
+    </property>
+   </widget>
+   <zorder>listView_2</zorder>
+   <zorder>height_label</zorder>
+   <zorder>height_edit</zorder>
+   <zorder>cm_label</zorder>
+   <zorder>weight_label</zorder>
+   <zorder>weight_edit</zorder>
+   <zorder>kg_label</zorder>
+   <zorder>label</zorder>
+   <zorder>gender_man_button</zorder>
+   <zorder>gender_woman_button</zorder>
+   <zorder>dangqian_label</zorder>
+   <zorder>BMI_result_line_edit_2</zorder>
+   <zorder>jisuan_BMI_button</zorder>
+   <zorder>morefunc_button</zorder>
+   <zorder>tuichu_button</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>tuichu_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>422</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>390</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BMI_result_hanshu()</slot>
+ </slots>
+</ui>

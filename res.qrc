@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/page_3_2.png</file>
+    <file>images/begin_5.png</file>
+    <file>images/diary.png</file>
+    <file>images/page_2_4.png</file>
+    <file>images/page_3_2.png</file>
+    <file>images/page_7days.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>icons/change.png</file>
+    <file>icons/close.png</file>
+    <file>icons/days.png</file>
+    <file>icons/diary.png</file>
+    <file>icons/my_look.png</file>
+    <file>icons/welcome.png</file>
+    <file>icons/yellman (1).png</file>
+    <file>icons/diary.png</file>
+  </qresource>
+</RCC>
