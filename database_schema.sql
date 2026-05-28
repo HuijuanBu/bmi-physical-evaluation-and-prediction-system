@@ -1,0 +1,35 @@
+CREATE DATABASE IF NOT EXISTS my_database
+DEFAULT CHARACTER SET utf8mb4
+DEFAULT COLLATE utf8mb4_general_ci;
+
+USE my_database;
+
+CREATE TABLE IF NOT EXISTS message (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    height FLOAT,
+    weight FLOAT,
+    BMI FLOAT,
+    gender VARCHAR(10),
+    time DATE,
+    name VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS future (
+    day INT AUTO_INCREMENT PRIMARY KEY,
+    weightt FLOAT,
+    kcal_in FLOAT,
+    kcal_out FLOAT
+);
+
+CREATE TABLE IF NOT EXISTS diary (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    time VARCHAR(50),
+    diary TEXT,
+    name VARCHAR(50)
+);
